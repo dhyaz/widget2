@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+      *{
+        background-color: transparent;
+      }
+      
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-card {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #090F16;
+            border-radius: 12px;
+            border: 2.8px solid #d8e5ee;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.1);
+            gap: 15px;
+        }
+
+        .kick-logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .username {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+            color: #d8e5ee;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+
+        .follow-btn {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #53FC18; /* Verde claro de Kick */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: scale 4s ease-in-out infinite;
+            font-family: 'Black Han Sans', sans-serif;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+
+        @keyframes scale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <svg width="150" height="100" viewBox="0 0 1000 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9790_492437)">
+<g clip-path="url(#clip1_9790_492437)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H100V66.6667H133.333V33.3333H166.667V0H266.667V100H233.333V133.333H200V166.667H233.333V200H266.667V300H166.667V266.667H133.333V233.333H100V300H0V0ZM666.667 0H766.667V66.6667H800V33.3333H833.333V0H933.333V100H900V133.333H866.667V166.667H900V200H933.333V300H833.333V266.667H800V233.333H766.667V300H666.667V0ZM300 0H400V300H300V0ZM533.333 0H466.667V33.3333H433.333V266.667H466.667V300H533.333H633.333V200H533.333V100H633.333V0H533.333Z" fill="#53FC18"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_9790_492437">
+<rect width="933" height="300" fill="white"/>
+</clipPath>
+<clipPath id="clip1_9790_492437">
+<rect width="933.333" height="300" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+        <p class="username">@dhyaz</p>
+        <button class="follow-btn">Follow</button>
+    </div>
+</body>
+</html>
